@@ -1,0 +1,50 @@
+rename BooksAndDoc
+rename Snake
+rename SFlux.pro
+rename CMakeLists.txt
+search WE
+search Pro
+shell vim ^s
+shell vim %s
+Q
+rename binkw32.dll
+rename .dll
+search paul
+search xl
+search zip
+shell unzip xlive.zip
+search Z
+mkdir t
+search I
+shell 
+search Me
+rename ACDC- For Those About To Rock (with lyrics)-fKhTk0IynHM.jpg
+shell ffmpeg -i %s %s.wav
+shell ffmpeg -i ~/
+shell ffmpeg -i %s ~/SladjaDisk/%s.wav
+s
+mkdir SpreadsheetToLaTeX
+mkdir SpreadsheetToLaTeXBak
+mkdir 
+rename -Oceanofgames.com-Hollow_Knight.zip
+rename Oceanofgames.com-Ori_And_The_Blind_Forest_Definitive_Edition.iso
+search 
+rename FontMenager.cpp
+rename FontMenager.h
+search gogi
+mkdir Prevod
+q
+rename eclipse-workspace
+find 
+search rang
+mkdir Books/
+shell vim
+mkdir Pratice
+shell v
+mkdir tools
+search exe
+shell ./%s
+al
+
+shell git add %s
+delete
