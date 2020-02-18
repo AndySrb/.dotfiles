@@ -1,0 +1,52 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>qtquickcontrols2.conf</file>
+        <file>qmldir/Settings/OptionsMenu.qml</file>
+        <file>qmldir/Settings/settingsFunctions.js</file>
+        <file>qmldir/Tabs/Tabs.qml</file>
+        <file>qmldir/TabSelections/Calculations/CalculationsListElements.qml</file>
+        <file>qmldir/TabSelections/Calculations/CalculationsTab.qml</file>
+        <file>qmldir/Toolbars/Main/MainToolBar.qml</file>
+        <file>qmldir/Toolbars/TabSelectorToolbar/TabSelectorToolbar.qml</file>
+        <file>main.cpp</file>
+        <file>qmldir/Toolbars/Function/FunctionToolBar.qml</file>
+        <file>qmldir/ToolbarSwitcher.js</file>
+        <file>qmldir/TabSelections/Calculations/CalculationsSections/OhmLaw/main.qml</file>
+        <file>qmldir/TabSelections/Calculations/CalculationsSections/ResistorColorCode/main.qml</file>
+        <file>qmldir/TabSelections/Calculations/CalculationsSections/ResistorColorCode/ColorCodeSelector.qml</file>
+        <file>qmldir/TabSelections/Calculations/CalculationsSections/ResistorColorCode/ColorCodeFunctions.js</file>
+        <file>qmldir/TabSelections/Calculations/CalculationsSections/ResistorColorCode/ToleraceColorCode.qml</file>
+        <file>qmldir/TabSelections/Calculations/CalculationsSections/ResistorColorCode/Resistor4color.qml</file>
+        <file>qmldir/TabSelections/Calculations/CalculationsSections/ResistorColorCode/Resistor5color.qml</file>
+        <file>qmldir/TabSelections/Calculations/CalculationsSections/ResistorColorCode/main.cpp</file>
+        <file>qmldir/UnitPrefixCalculations.js</file>
+        <file>qmldir/TabSelections/Theory/TheoryListElements.qml</file>
+        <file>qmldir/TabSelections/Theory/TheoryTab.qml</file>
+        <file>qmldir/TabSelections/Calculations/CalculationsSections/ReactiveResistance/main.qml</file>
+        <file>qmldir/TabSelections/Calculations/CalculationsSections/ReactiveResistance/ReactiveResistance.js</file>
+        <file>qmldir/TabSelections/Calculations/CalculationsSections/ReactiveResistance/InductiveReactance.qml</file>
+        <file>qmldir/TabSelections/Calculations/CalculationsSections/ReactiveResistance/CapacitiveReactance.qml</file>
+        <file>qmldir/TabSelections/Calculations/CalculationsSections/ReactiveResistance/CalcSelector.qml</file>
+        <file>qmldir/FunctionalElements/CustomButton.qml</file>
+        <file>qmldir/FunctionalElements/CustomPupUp.qml</file>
+        <file>qmldir/TabSelections/Calculations/CalculationsSections/OhmLaw/CalcSelector.qml</file>
+        <file>qmldir/TabSelections/Calculations/CalculationsSections/ResistorInSeriesAndInParaller/main.qml</file>
+        <file>qmldir/TabSelections/Elements/ElementsListElements.qml</file>
+        <file>qmldir/TabSelections/Elements/ElementsTab.qml</file>
+        <file>vectorImages/OhmsLaw.svg</file>
+        <file>vectorImages/ResistorSeriesPNG.png</file>
+        <file>vectorImages/ResistorsParallelPNG.png</file>
+        <file>qmldir/TabSelections/Calculations/CalculationsSections/CapacitorInSeriesAndInParaller/main.qml</file>
+        <file>vectorImages/CapacitorParallerPNG.png</file>
+        <file>vectorImages/CapacitorSeriesPNG.png</file>
+        <file>vectorImages/ReactiveResistance.png</file>
+        <file>icon_main.png</file>
+    </qresource>
+    <qresource prefix="/icons">
+        <file>icons/Capacitor.png</file>
+        <file>icons/ColorCode.png</file>
+        <file>icons/OhmLaw.png</file>
+        <file>icons/Resistor.png</file>
+    </qresource>
+</RCC>
