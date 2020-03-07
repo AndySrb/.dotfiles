@@ -8,6 +8,13 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
+#Startu-UP
+exec_always --no-startup-id picom
+exec_always --no-startup-id unclutter --timeout 5
+
+
+
+
 # windows key Mod4 ALT=Mod1
 set $mod Mod4 
 

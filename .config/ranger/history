@@ -33,7 +33,6 @@ rename FontMenager.cpp
 rename FontMenager.h
 search gogi
 mkdir Prevod
-q
 rename eclipse-workspace
 find 
 search rang
@@ -47,4 +46,5 @@ shell ./%s
 al
 
 shell git add %s
+q
 delete

@@ -1,1 +1,2 @@
 git status --porcelain | grep '^??' | cut -c4- >> .gitignore # commad to put all untracked files into .gitignore
+git reset HEAD path/to/unwanted_file # removes file from commit
