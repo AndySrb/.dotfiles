@@ -28,6 +28,8 @@
 .config/qxkb.pid
 .config/user-dirs.dirs
 .config/user-dirs.locale
+.config/ranger/history
+.config/ranger/bookmarks
 .gitconfig
 .gnupg/
 .i3/bar/
