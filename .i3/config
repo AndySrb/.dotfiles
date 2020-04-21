@@ -220,6 +220,7 @@ exec --no-startup-id exec bash $HOME/.fehbg
 
 #bindsym $mod+q exec chromium
 bindsym $mod+Shift+f exec $term ranger
+bindsym $mod+Tab exec rofi -show window
 #bindsym $mod+Shift+a exec $term -e cmus 
 #bindsym $mod+Shift+s exec qutebrowser
 #bindsym $mod+Shift+y exec $term 

@@ -5,7 +5,7 @@
 #include <utility>
 
 void saveName(std::ofstream &filename,const std::string &str);
-void getPos(std::string str,int max, int &p1);
+void getPos(const std::string &str,int max, int &p1);
 std::string removePrefix(std::string str,int p1, int p2);
 
 int main()

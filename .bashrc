@@ -216,6 +216,8 @@ alias Sudo='sudo !!'
 # Important Ones #
 ##################
 
+alias wine32="WINEPREFIX="$HOME/.prefix32" "
+alias wine64="WINEPREFIX="$HOME/.wine" "
 
 
 
@@ -223,4 +225,11 @@ dbus-update-activation-environment --all
 
 
 # Here is all your login related aliases
+
+if [[ -f "/tmp/autoCD" && -s "/tmp/autoCD" ]]; then 
+	cd "$(cat /tmp/autoCD)" && rm /tmp/autoCD	
+fi
+
+
+
 source ~/.bashrc_private
