@@ -6,12 +6,26 @@ set nocompatible
 
 ""Disable beep
 set vb
+set encoding=utf-8
+
 
 execute pathogen#infect('bundle/{}', '~/src/vim/bundle/{}')
 
 syntax on
 filetype plugin indent on
 :highlight Normal ctermbg=black
+
+""Seminarski
+function SetUsLayout()
+	silent !setxkbmap us
+endfunction
+
+function SetRsLayout()
+	silent !setxkbmap -layout rs
+endfunction
+
+"autocmd InsertLeave * call SetUsLayout()
+"autocmd InsertEnter * call SetRsLayout()
 
 ""Vim tab key
 set tabstop=4
@@ -24,6 +38,7 @@ let g:atp_Compiler='bash'
 
 "" ctags
 nnoremap <leader>. :CtrlPTag<cr>
+
 "" CTAGS + TAGBAR
 nnoremap <silent>,<Leader>b :TagbarToggle<CR>
 
@@ -33,11 +48,9 @@ let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
 ""Youcompleteme qt
 "let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf_qt.py"
 "
-
 ""Youcompleteme gtk
 "let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf_gtk+3.py"
 "
-
 ""Youcompleteme gtkmm
 "let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf_gtkmm3.py"
 
@@ -48,15 +61,33 @@ let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
 "let g:ycm_seed_identifiers_with_syntax = 1
 "let g:ycm_global_ycm_extra_conf = '/home/andy/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 
+
+"" YCM Defaults
 let g:ycm_collect_identifiers_from_tags_files = 1 " Disable if takes too much ram
 let g:ycm_semantic_completion_toggle = '<c-f>'
 let g:ycm_seed_identifiers_with_syntax = 1
 let g:clang_use_library = 1
 let g:clang_complete_macros = 1
-let g:ycm_semantic_triggers =  { 'cpp,objcpp' : ['->', '.', '::', 're!gl'] }
+let g:ycm_semantic_triggers =  { 'cpp,objcpp' : ['->', '.', '::', 're!gl'],
+			\ 'vim': ['re![_a-zA-Z]+[_\w]*\.'], 
+			\'erlang': [':'], 'c': ['->', '.'], 
+			\ 'perl': ['->'],
+			\ 'lua': ['.', ':'],
+			\ 'cs,javascript,d,python,perl6,scala,vb,elixir,go': ['.'],
+			\ 'php': ['->', '::'],
+			\ 'objc': ['->', '.'],
+			\ 'ocaml': ['.', '#'],
+			\'ruby': ['.', '::'], 
+			\ 'java,jsp': ['.'] }
 "let g:ycm_show_diagnostics_ui = 0
+"
+"let g:ycm_min_num_of_chars_for_completion = 2
+"let g:ycm_auto_trigger = 1
 
-set encoding=utf-8
+
+" Documentation in YCM
+let g:ycm_add_preview_to_completeopt = 1
+
 
 "For completion opengl not opengl ES
 "let g:clang_user_options = ' -DCLANG_COMPLETE_ONLY'
@@ -133,6 +164,7 @@ map <C-Right> :call RotateRight()<CR>
 map <F2> :NERDTreeToggle<CR>
 
 
+"" Syntax highlighting
 let g:cpp_class_scope_highlight = 1
 let g:cpp_member_variable_highlight = 1
 let g:cpp_class_decl_highlight = 1
@@ -151,10 +183,10 @@ map <F8> :!g++ -std=c++14 % -lglfw -lGL -lGLU -lglut -lGL -Wall -lglut -lGLEW   
 
 """BASIC TOOLS
 "Navigating with guides
-inoremap <Space><Space> <Esc>/<++><Enter>"_c4l
-vnoremap <Space><Space> <Esc>/<++><Enter>"_c4l
-map <Space><Space> <Esc>/<++><Enter>"_c4l
-inoremap ;gui <++>
+"inoremap <Space><Space> <Esc>/<++><Enter>"_c4l
+"vnoremap <Space><Space> <Esc>/<++><Enter>"_c4l
+"map <Space><Space> <Esc>/<++><Enter>"_c4l
+"inoremap ;gui <++>
 "For normal mode when in terminals (in X I have caps mapped to esc, this replaces it when I don't have X)
 inoremap jw <Esc>
 inoremap wj <Esc>

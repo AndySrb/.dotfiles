@@ -23,7 +23,38 @@ st.termname: st
 *.foreground: white
 *.cursorColor: white
 
-060101 B14E1A DA6215 B37244 F09133 EDAA4B F6D067 FCF6BF 696666 B14E1A DA6215 B37244 F09133 EDAA4B F6D067 FCF6BF
+*.color0: #060101
+*color0:  #060101
+*.color1: #B14E1A
+*color1:  #B14E1A
+*.color2: #DA6215
+*color2:  #DA6215
+*.color3: #B37244
+*color3:  #B37244
+*.color4: #F09133
+*color4:  #F09133
+*.color5: #EDAA4B
+*color5:  #EDAA4B
+*.color6: #F6D067
+*color6:  #F6D067
+*.color7: #FCF6BF
+*color7:  #FCF6BF
+*.color8: #696666
+*color8:  #696666
+*.color9: #B14E1A
+*color9:  #B14E1A
+*.color10: #DA6215
+*color10:  #DA6215
+*.color11: #B37244
+*color11:  #B37244
+*.color12: #F09133
+*color12:  #F09133
+*.color13: #EDAA4B
+*color13:  #EDAA4B
+*.color14: #F6D067
+*color14:  #F6D067
+*.color15: #FCF6BF
+*color15:  #FCF6BF
 
 ! Black color that will not be affected by bold highlighting.
 *.color66: #060101

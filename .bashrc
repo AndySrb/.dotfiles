@@ -23,8 +23,6 @@ function dusort () {
 }
 
 
-
-
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -147,7 +145,6 @@ wallpaper-jpg() {  cp "$@" /home/andy/Desktop.jpg && feh --bg-scale ~/Desktop.jp
 
 wallpaper-png() {  cp "$@" /home/andy/Desktop.png && feh --bg-scale ~/Desktop.png ; }
 
-usbmount() { sudo mount /dev/$@ ~/USB ; }
 
 poweroff() { echo -n 'Do you want to turn off your pc
 	(Y)es, (N)o
@@ -165,7 +162,21 @@ read options
 *) exit
 esac }
 
+################
+# Default Prog #
+################
+export EDITOR=vim
+export TERMINAL=st
+export BROWSER=qutebrowser
+export PAGER=less
+export PDFVIEWER=evince
+#DVIVIEWER
+#MDVIEWER
+#PSVIEWER
 
+################
+# Clean-up     #
+################	
 
 
 
@@ -227,7 +238,7 @@ dbus-update-activation-environment --all
 # Here is all your login related aliases
 
 if [[ -f "/tmp/autoCD" && -s "/tmp/autoCD" ]]; then 
-	cd "$(cat /tmp/autoCD)" && rm /tmp/autoCD	
+	cd "`cat /tmp/autoCD`" && rm /tmp/autoCD	
 fi
 
 
